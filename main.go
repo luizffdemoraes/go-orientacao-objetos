@@ -10,17 +10,27 @@ type ContaCorrente struct {
 }
 
 func main() {
-	conta := ContaCorrente{
-		titular:       "Luiz",
-		numeroAgencia: 589,
-		numeroConta:   123456,
-		saldo:         125.50,
-	}
+	// conta := ContaCorrente{
+	// 	titular:       "Luiz",
+	// 	numeroAgencia: 589,
+	// 	numeroConta:   123456,
+	// 	saldo:         125.50,
+	// }
 
-	contaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
+	// conta2 := ContaCorrente{
+	// 	titular:       "Luiz",
+	// 	numeroAgencia: 589,
+	// 	numeroConta:   123456,
+	// 	saldo:         125.50,
+	// }
 
-	fmt.Println(conta)
-	fmt.Println(contaDaBruna)
+	// Validar igualdade
+	// fmt.Println(conta == conta2)
+
+	// contaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
+
+	// fmt.Println(conta)
+	// fmt.Println(contaDaBruna)
 
 	// Ponteiro *
 	var contaDaCris *ContaCorrente
@@ -30,5 +40,18 @@ func main() {
 	contaDaCris.numeroConta = 111333
 	contaDaCris.numeroAgencia = 300
 
-	fmt.Println(*contaDaCris)
+	var contaDaCris2 *ContaCorrente
+	contaDaCris2 = new(ContaCorrente)
+	contaDaCris2.titular = "Cris"
+	contaDaCris2.saldo = 500
+	contaDaCris2.numeroConta = 111333
+	contaDaCris2.numeroAgencia = 300
+
+	// Visualizar o endereço
+	fmt.Println(&contaDaCris)
+
+	// Valída o endereço
+	fmt.Println(contaDaCris == contaDaCris2)
+	// Valída o conteúdo
+	fmt.Println(*contaDaCris == *contaDaCris2)
 }
