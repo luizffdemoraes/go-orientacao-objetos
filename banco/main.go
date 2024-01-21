@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	contaDaSilvia := contas.ContaCorrente{Titular: clientes.Titular{Nome: "Silvia"}, Saldo: 300}
-	contaDoGustavo := contas.ContaCorrente{Titular: clientes.Titular{Nome: "Gustavo"}, Saldo: 100}
+	contaDaSilvia := contas.ContaCorrente{Titular: clientes.Titular{Nome: "Silvia", CPF: "123.111.123.12", Profissao: "Desenvolvedor"}, NumeroConta: 123, NumeroAgencia: 123456, Saldo: 300}
+	contaDoGustavo := contas.ContaCorrente{Titular: clientes.Titular{Nome: "Gustavo", CPF: "123.111.123.13", Profissao: "Tech Leader"}, NumeroConta: 123, NumeroAgencia: 123456, Saldo: 300}
 
 	// status := contaDaSilvia.Transferir(200, &contaDoGustavo)
 	status := contaDoGustavo.Transferir(-200, &contaDaSilvia)
