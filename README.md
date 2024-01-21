@@ -4,15 +4,13 @@ Go: Orientação a Objetos
 
 ### Índice
 
-* [Minha primeira struct](#Minha-primeira-struct)
-* [Referência, ponteiro e métodos](#Referencia-ponteiro-metodos)
-* [Retornos, pacotes e visibilidade](#Retornos-pacotes-visibilidade)
-* [Composição e encapsulamento](#Composicao-encapsulamento)
-* [Interface e novo tipo de conta](#Interface-novo-tipo-de-conta)
+- Minha primeira struct
+- Referência, ponteiro e métodos
+- Retornos, pacotes e visibilidade
+- Composição e encapsulamento
+- Interface e novo tipo de conta
 
-
-
-<h2 align="center" href="#Minha-primeira-struct">
+<h2 align="center">
 Minha primeira struct
 </h2>
 
@@ -22,7 +20,7 @@ Minha primeira struct
 
 * Para finalizar, vimos duas formas utilizar a struct criada: informando ou não os nomes dos campos.
 
-<h2 align="center" href="#Referencia-ponteiro-metodos">
+<h2 align="center">
 Referência, ponteiro e métodos
 </h2>
 
@@ -32,7 +30,7 @@ Referência, ponteiro e métodos
 
 * Para finalizar, desenvolvemos o método sacar que verifica se o valor do saque é maior do que zero e se a conta possui saldo.
 
-<h2 align="center" href="#Retornos-pacotes-visibilidade">
+<h2 align="center">
 Retornos, pacotes e visibilidade
 </h2>
 
@@ -42,7 +40,7 @@ Retornos, pacotes e visibilidade
 
 * Para finalizar, criamos um pacote chamado contas e criamos um arquivo chamado contaCorrente.go para manter todo código referente a este tipo de conta.
 
-<h2 align="center" href="#Composicao-encapsulamento">
+<h2 align="center">
 Composição e encapsulamento
 </h2>
 
@@ -52,7 +50,7 @@ Composição e encapsulamento
 
 * Para finalizar, alteramos a visibilidade do campo saldo e criamos um método chamado obterSaldo.
 
-<h2 align="center" href="#Interface-novo-tipo-de-conta">
+<h2 align="center">
 Interface e novo tipo de conta
 </h2>
 
